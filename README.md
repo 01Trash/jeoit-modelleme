@@ -1,2 +1,1 @@
-# jeoit-modelleme
-Jeoit Modelleme 1. Ödev
+# Jeoit Modelleme 1. Ödev
