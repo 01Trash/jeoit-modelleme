@@ -2,7 +2,7 @@
 
 
 > International Reference Elipsoid:
- a_grs =  6378137.00000 m
+ /n a_grs =  6378137.00000 m
  b_grs =  6356752.31414 m
 
  > Cartesian Coordinates (X,Y,Z) & Orthometric Height (H):
