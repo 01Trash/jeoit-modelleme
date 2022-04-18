@@ -1,8 +1,11 @@
 # Jeoit Modelleme 1. Ödev
 
+2021-2022 Jeoit Modelleme Ödev 1 => [2021-2022 Ödev-1  GNSS Nivelmanı](https://drive.google.com/file/d/1kkJNQwu6rSIDDoVx0aiEQFFW4xg6jHCt/view)
+
+Veriler => [Data](https://drive.google.com/file/d/1BWs1Hxs6FGi_nMIDMsZPlYnkma81Uhjq/view)
 
 > International Reference Elipsoid:
-> 
+ 
  a_grs =  6378137.00000 m
  
  b_grs =  6356752.31414 m
