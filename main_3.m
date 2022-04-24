@@ -115,19 +115,16 @@ for i=1:m;
 
 end
 
-A = A;
-
 A_T = transpose(A);
 
 A_T_A = A_T * A;
 
-Qdelta = A_T_A.^-1;
+Qdelta = inv(A_T_A);
 
-A_T_l = A_T * l
+A_T_l = A_T * l;
 
 delta_x = Qdelta * A_T_l;
 
-%%% HATA!!!!
 V = A * delta_x - l;
 
 V_T = transpose(V);
