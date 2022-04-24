@@ -1,6 +1,10 @@
 clc,clear
 pkg load io
 
+##########################
+%%% 1. soru başlangıç
+##########################
+
 %%% Verileri çek
 filename = 'erdem.ods';
 data_source = xlsread(filename);
@@ -10,9 +14,6 @@ a = 6378137.00000;
 b = 6356752.31414;
 ro_D = 180/pi;
 
-##########################
-%%% 1. soru başlangıç
-##########################
 [m,n] = size(data_source);
 for i = 1:m;
     k = 1:n;
@@ -20,8 +21,6 @@ for i = 1:m;
     Y = data_source(i,2);
     Z = data_source(i,3);
 
-    i = i + 1;
-    k = k + 1;
 
     %%% Hocanın yazdığı fonksiyon
     [B,L,h] = XYZ_BLh(a, b, X, Y, Z);
@@ -32,31 +31,23 @@ for i = 1:m;
     M(i,2) = L * ro_D;
     M(i,3) = h;
 
+    i = i + 1;
+    k = k + 1;
 end;
-M(1,1) = 1;
-M(1,2) = 2;
-M(1,3) = 3;
+%M(1,1) = 1;
+%M(1,2) = 2;
+%M(1,3) = 3;
 %%% M dosyasını dosyaya yazdır
 %M
 %xlswrite('abc.xlsx', M);
-%csvwrite('birinci.csv', M);
+csvwrite('BLh.csv', M);
+
 ##########################
 %%% 1. soru bitiş
 ##########################
-##########################
-%%% 2. soru başlangıç
-##########################
 
 
 
-
-
-
-
-
-##########################
-%%% 2. soru bitiş
-##########################
 ##########################
 %%% 3. soru başlangıç
 ##########################
