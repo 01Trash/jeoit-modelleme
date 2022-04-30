@@ -16,8 +16,12 @@ y_top = 0;
 for i=1:m;
     k=1:n;
 
-    x_top = x_top + data_source(i,1);
-    y_top = y_top + data_source(i,2);
+    %metreden km çevir
+    x_ = (data_source(i,1))/1000;
+    y_ = (data_source(i,2))/1000;
+
+    x_top = x_top + x_;
+    y_top = y_top + y_;
 
     i = i+1;
 
@@ -30,8 +34,12 @@ y_ort = y_top / m;
 for i=1:m;
     k=1:n;
 
-    x = data_source(i,1)- x_ort;
-    y = data_source(i,2)-  y_ort;
+    %metreden km çevir
+    x_ = (data_source(i,1))/1000;
+    y_ = (data_source(i,2))/1000;
+
+    x = x_ - x_ort;
+    y = y_ -  y_ort;
 
     M(i,1) = x;
     M(i,2) = y;
