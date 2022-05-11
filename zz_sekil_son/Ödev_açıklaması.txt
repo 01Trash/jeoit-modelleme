@@ -1,0 +1,3 @@
+HRT432_OK.m dosyasında 11. satırda bulunan txt dosyasını kendi değerlerimize göre değiştireceğiz.
+HRT432_OK.m dosyasında 42 ile 51. satırlara a0-a9 katsayı değerlerini koyacağız.
+HRT432_OK.m dosyasını çalıştırınca grafik oluşur.
