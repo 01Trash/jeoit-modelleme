@@ -21,7 +21,7 @@ hold ("on");
 plot3(x, y, z,"-b");
 #... Plot Properties
 hold ("on");
-legend( data, elip, geod ) ;
+legend("180227062 Erdem GÜNEŞ", "Ellipsoid", "Local Geoid" ) ;
 hold ("off");
 endfunction
 %Plot.m *************************************************************
